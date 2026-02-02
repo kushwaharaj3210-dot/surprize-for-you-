@@ -1,0 +1,52 @@
+body {
+  font-family: 'Dancing Script', cursive;
+  background: linear-gradient(135deg, #ff69b4, #ffb6c1, #ff1493);
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.hero {
+  padding: 50px 20px;
+  animation: fadeIn 3s ease-in;
+}
+
+.hero h1 {
+  font-size: 3em;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+button {
+  background: #dc143c;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+button:hover {
+  background: #b22222;
+  transform: scale(1.1);
+}
+
+.hidden {
+  display: none;
+}
+
+.message-list p {
+  font-size: 1.5em;
+  margin: 20px;
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
